@@ -5,6 +5,8 @@ from pathlib import Path
 import json
 import pymupdf
 
+from .schema import DrugRecord
+
 SECTION_FIXES = {
     "( ةلاعفلا ةداملاActive Ingredient):":
         "Active Ingredient(الماده الفعاله):",
@@ -108,7 +110,9 @@ def parse_drug(
         if field_name not in positions
     ]
 
-    return drug, missing_sections    
+    validated_drug = DrugRecord.model_validate(drug)
+
+    return validated_drug.model_dump(), missing_sections
 
 
 def _write_json(

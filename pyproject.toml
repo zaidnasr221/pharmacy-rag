@@ -10,6 +10,7 @@ dependencies = [
     "langchain-community>=0.4.2",
     "langchain-core>=1.6.5",
     "pillow>=12.3.0",
+    "pydantic>=2.13.5",
     "pydantic-settings>=2.15.0",
     "pymupdf>=1.28.2",
     "pypdf>=6.19.0",
