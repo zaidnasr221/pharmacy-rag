@@ -2,7 +2,26 @@
 name = "pharmacy-rag"
 version = "0.1.0"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "arabic-reshaper>=3.0.1",
+    "dspy-ai>=3.4.0",
+    "fastapi>=0.141.1",
+    "langchain>=1.4.2",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.5",
+    "pillow>=12.3.0",
+    "pydantic>=2.13.5",
+    "pydantic-settings>=2.15.0",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.19.0",
+    "python-bidi>=0.6.11",
+    "python-dotenv>=1.2.3",
+    "qdrant-client>=1.19.1",
+    "sentence-transformers>=6.1.0",
+    "torch>=2.14.0",
+    "transformers>=5.17.0",
+    "uvicorn>=0.54.0",
+]
 
 [dependency-groups]
 dev = [
